@@ -1,6 +1,5 @@
 package org.capg.usermgt.dao;
 
-import java.util.List;
 
 import org.capg.usermgt.entities.WalletUser;
 import org.springframework.data.jpa.repository.JpaRepository;

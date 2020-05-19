@@ -36,16 +36,9 @@ public class WalletUserServiceImpl implements IWalletUserService {
 		account.setAccountBalance(0);
 		account.setStatus(Status.ACTIVE);
 		account = accountDao.save(account);
-		//user.setAccount(account);
+		user.setAccount(account);
 	    user =userDao.save(user);
 		return user;
-	}
-	
-	@Override
-	public WalletAccount findAccountByUserId(int userId) {
-		WalletUser user=findById(userId);
-		WalletAccount account = user.getAccount();
-		return account;
 	}
 
 	@Override

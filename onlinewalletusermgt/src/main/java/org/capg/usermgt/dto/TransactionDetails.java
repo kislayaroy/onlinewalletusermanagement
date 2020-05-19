@@ -6,8 +6,6 @@ public class TransactionDetails {
 
     private double amount;
 
-    private String dateTime;
-
     private String transactionType;
 
     public int getUserId() {

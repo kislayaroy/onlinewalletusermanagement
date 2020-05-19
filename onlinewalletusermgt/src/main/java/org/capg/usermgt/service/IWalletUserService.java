@@ -17,8 +17,6 @@ public interface IWalletUserService {
 
     void deleteUser(int userId);
 
-    WalletAccount findAccountByUserId(int userId);
-
     WalletUser debit(int userId, double amount);
 
     WalletUser credit(int userId, double amount);
