@@ -20,7 +20,7 @@ export class WalletService{
     return result;
     }
 
-    fetchAllFlights():Observable<User[]>
+    fetchAllUsers():Observable<User[]>
     {
       let url='http://localhost:8086/users';
       let observable:Observable<User[]> =this.client.get<User[]>(url);
